@@ -10,16 +10,16 @@ export default function Footer() {
   ];
 
   return (
-    <footer className=" py-32  border-t  h-screen px-4 md:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto text-white">
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-24 mb-12">
+    <footer className="md:py-32 py-5 sm:py-10 border-t  border-gray-600 min-h-screen px-4 md:px-4  lg:px-8">
+      <div className="md:max-w-7xl md:mx-auto text-white">
+        <div className="grid grid-cols-1 md:grid-cols-2  sm:text-start   gap-8 md:12 lg:gap-24 mb-12">
           <div>
-            <h4 className="text-4xl md:text-5xl lg:text-5xl font-playfair  font-medium  mb-8">
+            <h4 className="text-2xl md:text-5xl lg:text-5xl font-playfair  font-medium  md:mb-8">
               Join us for an <br /> unforgettable experience
             </h4>
           </div>
-          <div className="flex flex-col items-end ">
-            <h3 className="text-sm uppercase mb-4 font-inter">
+          <div className="flex flex-col items-start sm:items-center md:items-end  ">
+            <h3 className="uppercase mb-4 font-inter">
               Download the groves app
             </h3>
             <div className="flex space-x-4">
@@ -47,8 +47,8 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 font-inter md:grid-cols-3 gap-8 mb-12">
           <div>
-            <h3 className="text-sm uppercase mb-4">Location</h3>
-            <p className="text-sm leading-6">
+            <h3 className="uppercase mb-4">Location</h3>
+            <p className=" leading-6">
               Al-Hizam Park
               <br />
               Al-Semairi, Yanbu Al Bahr 46455
@@ -57,8 +57,8 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-sm uppercase mb-4">Working hours</h3>
-            <p className="text-sm leading-6">
+            <h3 className="uppercase mb-4">Working hours</h3>
+            <p className="leading-6">
               Sun until Thurs: 4:00PM
               <br />
               Fri & Sat: 2:30PM
@@ -72,15 +72,15 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-sm uppercase mb-4">Guest service call</h3>
-            <p className="text-sm leading-6">cc@thegroves-sa.com</p>
+            <h3 className="uppercase mb-4">Guest service call</h3>
+            <p className="leading-6">cc@thegroves-sa.com</p>
             <p> 920001672</p>
 
             <p>+966556631309</p>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between item-start md:items-center">
           <div className="mb-6 md:mb-0">
             <Image
               src="/imgs/footer-logo.png"
@@ -107,8 +107,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className=" pt-8 mt-8 flex font-inter flex-col md:flex-row justify-between items-center text-sm">
-          <div className="flex space-x-8 mb-4 md:mb-0">
+        <div className=" pt-8 mt-3 flex font-inter flex-col md:flex-row justify-between items-start md:items-center ">
+          <div className="flex flex-col md:row space-y-3   md:space-x-8  mb-2 md:mb-4 md:mb-0">
             <Link href="#" className="hover:underline">
               Terms & Conditions
             </Link>
@@ -118,7 +118,7 @@ export default function Footer() {
             <p>©2023 The Groves for Entertainment</p>
           </div>
 
-          <div className="flex justify-end space-x-2 mt-4 md:mt-0">
+          <div className="flex space-x-2 mt-1 md:mt-4 md:mt-0">
             {PaymentImages.map((payment, index) => (
               <Image
                 key={index}
