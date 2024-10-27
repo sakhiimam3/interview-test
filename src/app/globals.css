@@ -3,19 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0F1500;  
+  --foreground: #283606; 
+  
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('/app/PlayfairDisplay.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/app/Inter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--foreground); 
+  background: linear-gradient(135deg, var(--foreground), var(--background));
 }
+.navbar{
+  background:var(--background)
+}
+.card-bg{
+  background:var(--foreground)
+}
+
