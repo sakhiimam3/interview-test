@@ -24,14 +24,10 @@ interface ImageSliderProps {
 const ImageSlider: FC<ImageSliderProps> = ({
   images,
   spaceBetween = 20,
-  slidesPerView = 2,
-  breakpoints = {
-    640: { slidesPerView: 3 },
-    1024: { slidesPerView: 5 },
-  },
+  breakpoints,
 }) => {
   return (
-    <Swiper spaceBetween={spaceBetween} slidesPerView={slidesPerView} breakpoints={breakpoints}>
+    <Swiper spaceBetween={spaceBetween} breakpoints={breakpoints}>
       {images.map((image, index) => (
         <SwiperSlide key={index}>
           <div className="group relative">

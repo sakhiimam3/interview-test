@@ -18,7 +18,7 @@ export default function Footer() {
               Join us for an <br /> unforgettable experience
             </h4>
           </div>
-          <div className="flex flex-col items-start sm:items-center md:items-end  ">
+          <div className="flex flex-col items-start  md:items-end ">
             <h3 className="uppercase mb-4 font-inter">
               Download the groves app
             </h3>
@@ -47,7 +47,7 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 font-inter md:grid-cols-3 gap-8 mb-12">
           <div>
-            <h3 className="uppercase mb-4">Location</h3>
+            <h3 className="uppercase mb-4 font-inter">Location</h3>
             <p className=" leading-6">
               Al-Hizam Park
               <br />
@@ -57,7 +57,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="uppercase mb-4">Working hours</h3>
+            <h3 className="uppercase mb-4 font-inter">Working hours</h3>
             <p className="leading-6">
               Sun until Thurs: 4:00PM
               <br />
@@ -71,10 +71,10 @@ export default function Footer() {
               Thu & Fri: 12:30AM
             </p>
           </div>
-          <div>
-            <h3 className="uppercase mb-4">Guest service call</h3>
+          <div className="font-inter">
+            <h3 className="uppercase mb-4 f">Guest service call</h3>
             <p className="leading-6">cc@thegroves-sa.com</p>
-            <p> 920001672</p>
+            <p > 920001672</p>
 
             <p>+966556631309</p>
           </div>
@@ -107,8 +107,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className=" pt-8 mt-3 flex font-inter flex-col md:flex-row justify-between items-start md:items-center ">
-          <div className="flex flex-col md:row space-y-3   md:space-x-8  mb-2 md:mb-4 md:mb-0">
+        <div className=" pt-8 mt-3 flex font-inter flex-col md:flex-row justify-between items-start md:items-center">
+          <div className="flex flex-col md:flex-row space-y-3  md:space-y-0 items-start  md:items-center    md:space-x-8  mb-2 md:mb-4 md:mb-0 ">
             <Link href="#" className="hover:underline">
               Terms & Conditions
             </Link>

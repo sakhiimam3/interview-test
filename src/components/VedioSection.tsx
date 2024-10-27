@@ -12,7 +12,7 @@ const VideoSection = () => {
   };
 
   return (
-    <div className="relative min-h-screen my-5">
+    <div className="relative  md:my-5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <CenteredText
           text=" Lorem Ipsum is simply dummy text of the printing and typesetting

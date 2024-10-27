@@ -19,22 +19,22 @@ const CreateExp = () => {
   return (
     <div className="container  my-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex gap-16 items-center">
-          <div className="w-[30%]">
-            <h2 className="text-4xl capitalize  font-playfair  font-medium		 md:text-3xl lg:text-6xl font-bold text-white mb-6">
-              curate your experience as you like{" "}
+        <div className="flex flex-col  items-center  md:flex-row gap-16">
+          <div className="w-[80%]  md:w-[30%] ">
+            <h2 className="text-4xl capitalize  font-playfair  font-medium	md:text-3xl lg:text-6xl font-bold text-white mb-6">
+              curate your experience as you like
             </h2>
             <CustomButton text="book tickets" width="200px" icon={ArrowIcon} />.
           </div>
-          <div className="w-[60%]">
+          <div className="w-[100%] md:w-[60%]">
             <ImageSlider
               images={imageData}
               breakpoints={{
-                640: { slidesPerView: 3 },
+                640: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
               }}
               spaceBetween={10}
-              slidesPerView={3}
+             
             />
           </div>
         </div>

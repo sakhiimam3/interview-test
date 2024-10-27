@@ -26,7 +26,7 @@ export default function Resotrant() {
   ];
 
   return (
-    <div className="min-h-screen bg-olive-900 text-white p-6 md:p-12">
+    <div className="min-h-screen  text-white p-6 md:p-12">
       <div className="max-w-6xl mx-auto">
         <CenteredText
           text=" Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
