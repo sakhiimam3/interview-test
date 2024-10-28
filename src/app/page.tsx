@@ -3,7 +3,6 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import LuxurySlider from "@/components/HeroSlider";
 import Mapsection from "@/components/Map";
-import Navigation from "@/components/Navigation";
 import Restaurant from "@/components/Resotrant";
 import Tickets from "@/components/Tickets";
 import VideoSection from "@/components/VedioSection";
