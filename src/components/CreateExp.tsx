@@ -7,7 +7,7 @@ import ImageSlider from "./slider";
 const CreateExp = () => {
   const imageData = [
     { src: "/imgs/card1.png", title: "Resturants" },
-    { src: "/imgs/card2.png", title: "Events" },
+    { src: "/imgs/card7.png", title: "Events" },
     { src: "/imgs/card3.png", title: "Party" },
     { src: "/imgs/card4.png", title: "Lorem" },
     { src: "/imgs/card1.png", title: "Little Krazy" },

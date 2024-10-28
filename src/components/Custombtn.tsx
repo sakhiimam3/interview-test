@@ -17,7 +17,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`bg-gradient-to-r flex  text-white  ${Icon ? "justify-between":"justify-center" }  capitalize font-medium from-[#DCBB75] to-[#AD8749] py-3 px-4 rounded-xl inline-flex items-center justify-center transition-colors hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-opacity-50`}
+      className={`bg-gradient-to-r flex  text-white  ${Icon ? "justify-between":"justify-center" }  capitalize font-medium from-[#DCBB75] to-[#AD8749] py-4 md:py-3 px-4 rounded-xl inline-flex items-center justify-center transition-colors hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:ring-opacity-50`}
       style={{width:width}}
     >
       <>

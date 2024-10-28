@@ -10,7 +10,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="md:py-32 py-5 sm:py-10 border-t  border-gray-600 min-h-screen px-4 md:px-4  lg:px-8">
+    <footer className="py-5 md:py-10 border-t  border-gray-600  px-4 md:px-4  lg:px-8">
       <div className="md:max-w-7xl md:mx-auto text-white">
         <div className="grid grid-cols-1 md:grid-cols-2  sm:text-start   gap-8 md:12 lg:gap-24 mb-12">
           <div>

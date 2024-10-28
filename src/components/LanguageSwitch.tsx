@@ -27,40 +27,43 @@ export const LanguageSwitcher = () => {
     };
 
     return (
-        <div className="relative">
+        <div className="relative ">
             <button
-                className="flex items-center space-x-1 text-sm"
+                className="flex my-5 md:my:0 items-center space-x-2 text-sm whitespace-nowrap"
                 onClick={toggleDropdown}
             >
-                <Image
+                <img
                     src={"/imgs/drop.png"}
-                    alt={`drop image`}
+                    alt={`Dropdown icon`}
                     width={20}
                     height={20}
-                    className="rounded"
                 />
                 <Image
                     src={languages[selectedLanguage].flag}
                     alt={`${selectedLanguage} Flag`}
                     width={30}
                     height={30}
-                    className="rounded"
                 />
-                <span>{languages[selectedLanguage].name}</span>
-
+                <span className="inline">{languages[selectedLanguage].name}</span>
             </button>
 
             {/* Dropdown menu */}
             {isDropdownOpen && (
-                <div className="absolute z-20 mt-2 w-32 bg-white border border-gray-200 rounded shadow-lg">
+                <div className="absolute z-20 mt-2 min-w-[8rem] bg-white border border-gray-200 rounded shadow-lg">
                     {Object.entries(languages).map(([key, { name, flag }]) => (
                         <button
                             key={key}
                             onClick={() => handleLanguageChange(key as LanguageKey)}
-                            className="flex items-center w-full px-2 py-1 text-sm hover:bg-gray-100"
+                            className="flex items-center gap-6 w-full px-2 py-1 text-sm hover:bg-gray-100 whitespace-nowrap"
                         >
-                            <Image src={flag} alt={`${name} Flag`} width={20} height={20} className="rounded mr-2" />
-                            <span  style={{color:"black"}}>{name}</span>
+                            <Image
+                                src={flag}
+                                alt={`${name} Flag`}
+                                width={20}
+                                height={20}
+                                className="rounded mr-2"
+                            />
+                            <span className="text-black">{name}</span>
                         </button>
                     ))}
                 </div>

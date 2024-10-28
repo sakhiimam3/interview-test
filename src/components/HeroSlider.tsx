@@ -57,7 +57,8 @@ const LuxurySlider = () => {
         className="w-full h-full"
       >
         {slides.map((slide) => (
-          <SwiperSlide key={slide.id} className="relative">
+          <React.Fragment key={slide.id}>
+                    <SwiperSlide  className="relative">
             {/* Background Image */}
             <div className="absolute inset-0">
               <Image
@@ -76,7 +77,7 @@ const LuxurySlider = () => {
                 <div className="absolute inset-0 bg-black opacity-50 rounded-lg" />
 
                 {/* Text Content */}
-                <div className="relative left-20 p-6">
+                <div className="relative   md:left-8 lg:left-20 p-6">
                   <h6 className="uppercase  font-inter  text-sm md:text-lg font-light mb-8">
                     {slide.title}
                   </h6>
@@ -93,6 +94,12 @@ const LuxurySlider = () => {
               </div>
             </div>
           </SwiperSlide>
+          <style jsx global>{`
+            .swiper-pagination {
+              @apply absolute bottom-4 left-4 md:bottom-8 md:left-1/2 md:-translate-x-1/2 md:text-center;
+            }
+          `}</style></React.Fragment>
+
         ))}
       </Swiper>
     </div>

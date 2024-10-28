@@ -10,9 +10,8 @@ import VideoSection from "@/components/VedioSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="mx-w-[1440px] mx-auto">
       <Header />
-      <Navigation />
       <main>
         <LuxurySlider />
 
